@@ -1,0 +1,33 @@
+fileFormatVersion: 2
+guid: 630567e1d5f452b469a4324ca0177e12
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
+  baseLanguageID: en-GB
+  stringIDs:
+  - Example 1-Example-0
+  - Example 1-Example-1
+  - Example 1-Example-2
+  - Example 1-Example-3
+  - Example 1-Example-4
+  - Example 1-Example-5
+  - Example 1-Example-6
+  - Example 1-Example-7
+  - Example 1-Example.Mood-8
+  - Example 1-Example.Mood-9
+  - Example 1-Example.Mood-10
+  - Example 1-Example.Mood-11
+  - Example 1-Example.Mood-12
+  - Example 1-Example.Mood-13
+  - Example 1-Example.GetBread-14
+  - Example 1-Example.GetBread-15
+  compilationStatus: 1
+  isSuccesfullyCompiled: 1
+  compilationErrorMessage: 
+  baseLanguage: {fileID: 7128917941130120860, guid: 81fcb1621d73aea498039283c57684f3, type: 3}
+  localizations: []

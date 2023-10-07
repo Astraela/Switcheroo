@@ -1,0 +1,29 @@
+﻿title: Kangaroo
+tags:
+---
+<<call activate("Sprite","Kang")>>
+<<if not visited("Kangaroo")>>
+    You: Heya whats up!
+    You: Can I get ur FEET!
+    Kangaroo: Absolutely
+        [[Kangaroo.BodyChoosing]]
+<<else>>
+    Kangaroo: Heya you want my feet again?
+    -> Yes
+        [[Kangaroo.BodyChoosing]]
+    -> No
+<<endif>>
+===
+
+title: Kangaroo.BodyChoosing
+tags:
+---
+Kangaroo: Which one do you want?
+-> Head
+    <<call activate("Kangaroo","HeadChoose")>>
+-> Body
+    <<call activate("Kangaroo","BodyChoose")>>
+-> Legs
+    <<call activate("Kangaroo","LegsChoose")>>
+-> Nevermind
+===

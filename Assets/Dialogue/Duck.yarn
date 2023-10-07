@@ -1,0 +1,54 @@
+﻿title: Duck
+tags:
+---
+<<call activate("Sprite","Duck")>>
+<<if not visited("Duck")>>
+    You: Heya whats up!
+    You: Can I get ur FEET!
+<<call activate("Sprite","DuckBlush")>>
+    Duck: Buy me dinner first
+    Duck: 5 breadsticks pls thank u
+    <<call activate("Duck","BreadActivate")>>
+<<else>>
+    Duck: 5 breadsticks pls
+<<endif>>
+===
+
+title: Duck.BreadGet
+tags:
+---
+<<call activate("Sprite","Duck")>>
+<<call activate("Duck","BreadDeactivate")>>
+You: Got ur bread
+Duck: How irresponsible have you even done research into how much bread I eat on a daily base.
+Duck: If you give a duck too much bread they stop eating food that actually contains what they need.
+Duck: You might've just killed me.
+You: O_O
+Duck: Ok do you want to steal my bodyparts?
+-> Yes
+    [[Duck.BodyChoosing]]
+-> No
+===
+
+title: Duck.BodyTalk
+tags:
+---
+<<call activate("Sprite","Duck")>>
+Duck: Hey! you wanna swap bodyparts?
+-> Yes
+    [[Duck.BodyChoosing]]
+-> No
+===
+
+title: Duck.BodyChoosing
+tags:
+---
+Duck: Which one do you want?
+-> Head
+    <<call activate("Duck","HeadChoose")>>
+-> Body
+    <<call activate("Duck","BodyChoose")>>
+-> Legs
+    <<call activate("Duck","LegsChoose")>>
+-> Nevermind
+===
